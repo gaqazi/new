@@ -30,5 +30,6 @@ jobs:
     - name: Install Surge      
       run: npm install -g surge  
     - name: Run Surge
-      run: surge ./ jagged-protest.surge.sh
+      run: surge ./ jagged-protest.surge.sh --token ${{secret.SURGE_TOKEN}}
+      
      
